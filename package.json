@@ -27,12 +27,23 @@
   },
   "homepage": "https://github.com/taoyage/yg-configs#readme",
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "postcss": ">=8.3.11 <9.0.0"
   },
   "dependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "lint-staged": "^12.3.8",
-    "prettier": "^2.6.2"
+    "postcss-image-set-polyfill": "^1.0.0",
+    "postcss-preset-env": "^7.4.3",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0"
   }
 }
