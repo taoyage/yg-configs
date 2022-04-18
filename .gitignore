@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+
+# Local files
+.idea
+.vscode
+.DS_Store
+
+# Lock file
+package-lock.json
+yarn-lock.json
+
+# Dependency directory
+node_modules

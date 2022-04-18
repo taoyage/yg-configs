@@ -1,0 +1,38 @@
+{
+  "name": "@yg/configs",
+  "version": "1.0.0",
+  "description": "CLI toolbox for common scripts for my projects",
+  "scripts": {
+    "prepare": "husky install",
+    "prettier": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taoyage/yg-configs.git"
+  },
+  "keywords": [
+    "babel",
+    "ts",
+    "eslint",
+    "husky",
+    "prettier"
+  ],
+  "engines": {
+    "node": ">= 14.10"
+  },
+  "author": "taoyage",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taoyage/yg-configs/issues"
+  },
+  "homepage": "https://github.com/taoyage/yg-configs#readme",
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "lint-staged": "^12.3.8",
+    "prettier": "^2.6.2"
+  }
+}
