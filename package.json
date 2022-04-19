@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/taoyage/yg-configs#readme",
   "devDependencies": {
+    "browserslist": ">= 4",
     "husky": "^7.0.4",
     "postcss": ">=8.3.11 <9.0.0"
   },
@@ -34,7 +35,9 @@
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "lint-staged": "^12.3.8",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-image-set-polyfill": "^1.0.0",
+    "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.4.3",
     "prettier": "^2.6.2",
     "stylelint": "^14.7.1",

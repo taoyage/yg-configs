@@ -3,10 +3,13 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': ^16.2.3
   '@commitlint/config-conventional': ^16.2.1
+  browserslist: '>= 4'
   husky: ^7.0.4
   lint-staged: ^12.3.8
   postcss: '>=8.3.11 <9.0.0'
+  postcss-flexbugs-fixes: ^5.0.2
   postcss-image-set-polyfill: ^1.0.0
+  postcss-normalize: ^10.0.1
   postcss-preset-env: ^7.4.3
   prettier: ^2.6.2
   stylelint: ^14.7.1
@@ -22,7 +25,9 @@ dependencies:
   '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
   lint-staged: 12.3.8
+  postcss-flexbugs-fixes: 5.0.2_postcss@8.4.12
   postcss-image-set-polyfill: 1.0.0
+  postcss-normalize: 10.0.1_e3735dbe6187dcfb964df4abbfac9372
   postcss-preset-env: 7.4.3_postcss@8.4.12
   prettier: 2.6.2
   stylelint: 14.7.1
@@ -35,6 +40,7 @@ dependencies:
   stylelint-order: 5.0.0_stylelint@14.7.1
 
 devDependencies:
+  browserslist: 4.20.2
   husky: 7.0.4
   postcss: 8.4.12
 
@@ -442,6 +448,11 @@ packages:
     engines: { node: '>=12' }
     dependencies:
       '@cspotcode/source-map-consumer': 0.8.0
+    dev: false
+
+  /@csstools/normalize.css/12.0.0:
+    resolution:
+      { integrity: sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg== }
     dev: false
 
   /@csstools/postcss-color-function/1.1.0_postcss@8.4.12:
@@ -960,7 +971,6 @@ packages:
       escalade: 3.1.1
       node-releases: 2.0.3
       picocolors: 1.0.0
-    dev: false
 
   /cache-base/1.0.1:
     resolution:
@@ -1040,7 +1050,6 @@ packages:
   /caniuse-lite/1.0.30001332:
     resolution:
       { integrity: sha512-10T30NYOEQtN6C11YGg411yebhvpnC6Z102+B95eAsN0oB6KUs01ivE8u+G6FMIRtIrVlYXhL+LUwQ3/hXwDWw== }
-    dev: false
 
   /ccount/1.1.0:
     resolution:
@@ -1537,7 +1546,6 @@ packages:
   /electron-to-chromium/1.4.111:
     resolution:
       { integrity: sha512-/s3+fwhKf1YK4k7btOImOzCQLpUjS6MaPf0ODTNuT4eTM1Bg4itBpLkydhOzJmpmH6Z9eXFyuuK5czsmzRzwtw== }
-    dev: false
 
   /emoji-regex/7.0.3:
     resolution:
@@ -1575,7 +1583,6 @@ packages:
     resolution:
       { integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw== }
     engines: { node: '>=6' }
-    dev: false
 
   /escape-string-regexp/1.0.5:
     resolution: { integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ= }
@@ -2922,7 +2929,6 @@ packages:
   /node-releases/2.0.3:
     resolution:
       { integrity: sha512-maHFz6OLqYxz+VQyCAtA3PTX4UP/53pa05fyDNc9CwjvJ0yEh6+xBwKsgCxMNhS8taUKBFYxfuiaD9U/55iFaw== }
-    dev: false
 
   /normalize-package-data/2.5.0:
     resolution:
@@ -3217,6 +3223,18 @@ packages:
       postcss-selector-parser: 6.0.10
     dev: false
 
+  /postcss-browser-comments/4.0.0_e3735dbe6187dcfb964df4abbfac9372:
+    resolution:
+      { integrity: sha512-X9X9/WN3KIvY9+hNERUqX9gncsgBA25XaeR+jshHz2j8+sYyHktHw1JdKuMjeLpGktXidqDhA7b/qm1mrBDmgg== }
+    engines: { node: '>=8' }
+    peerDependencies:
+      browserslist: '>=4'
+      postcss: '>=8'
+    dependencies:
+      browserslist: 4.20.2
+      postcss: 8.4.12
+    dev: false
+
   /postcss-clamp/4.1.0_postcss@8.4.12:
     resolution:
       { integrity: sha512-ry4b1Llo/9zz+PKC+030KUnPITTJAHeOwjfAyyB60eT0AorGLdzp52s31OsPRHRf8NchkgFoG2y6fCfn1IV1Ow== }
@@ -3325,6 +3343,15 @@ packages:
     dependencies:
       postcss: 8.4.12
       postcss-value-parser: 4.2.0
+    dev: false
+
+  /postcss-flexbugs-fixes/5.0.2_postcss@8.4.12:
+    resolution:
+      { integrity: sha512-18f9voByak7bTktR2QgDveglpn9DTbBWPUzSOe9g0N4WR/2eSt6Vrcbf0hmspvMI6YWGywz6B9f7jzpFNJJgnQ== }
+    peerDependencies:
+      postcss: ^8.1.4
+    dependencies:
+      postcss: 8.4.12
     dev: false
 
   /postcss-focus-visible/6.0.4_postcss@8.4.12:
@@ -3490,6 +3517,21 @@ packages:
     dependencies:
       postcss: 8.4.12
       postcss-selector-parser: 6.0.10
+    dev: false
+
+  /postcss-normalize/10.0.1_e3735dbe6187dcfb964df4abbfac9372:
+    resolution:
+      { integrity: sha512-+5w18/rDev5mqERcG3W5GZNMJa1eoYYNGo8gB7tEwaos0ajk3ZXAI4mHGcNT47NE+ZnZD1pEpUOFLvltIwmeJA== }
+    engines: { node: '>= 12' }
+    peerDependencies:
+      browserslist: '>= 4'
+      postcss: '>= 8'
+    dependencies:
+      '@csstools/normalize.css': 12.0.0
+      browserslist: 4.20.2
+      postcss: 8.4.12
+      postcss-browser-comments: 4.0.0_e3735dbe6187dcfb964df4abbfac9372
+      sanitize.css: 13.0.0
     dev: false
 
   /postcss-opacity-percentage/1.1.2:
@@ -4039,6 +4081,11 @@ packages:
     resolution: { integrity: sha1-QKNmnzsHfR6UPURinhV91IAjvy4= }
     dependencies:
       ret: 0.1.15
+    dev: false
+
+  /sanitize.css/13.0.0:
+    resolution:
+      { integrity: sha512-ZRwKbh/eQ6w9vmTjkuG0Ioi3HBwPFce0O+v//ve+aOq1oeCy7jMV2qzzAlpsNuqpqCBjjriM1lbtZbF/Q8jVyA== }
     dev: false
 
   /semver/5.7.1:
