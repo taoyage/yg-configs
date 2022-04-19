@@ -1,5 +1,5 @@
 {
-  "name": "@yg/configs",
+  "name": "yg-configs",
   "version": "1.0.0",
   "description": "CLI toolbox for common scripts for my projects",
   "scripts": {
