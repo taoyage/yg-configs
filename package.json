@@ -17,6 +17,16 @@
     "husky",
     "prettier"
   ],
+  "files": [
+    "src",
+    "commitlint.js",
+    "eslint-ts.js",
+    "lintstaged.js",
+    "prettier.js",
+    "postcss.js",
+    "shared-tsconfig.json",
+    "stylelint.js"
+  ],
   "engines": {
     "node": ">= 14.10"
   },
@@ -35,6 +45,8 @@
   "dependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.168",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint": "^8.13.0",
