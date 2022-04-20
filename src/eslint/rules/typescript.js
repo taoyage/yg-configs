@@ -106,7 +106,7 @@ module.exports = {
   '@typescript-eslint/no-parameter-properties': 'error',
   'no-redeclare': 'off',
   '@typescript-eslint/no-redeclare': 'off',
-  '@typescript-eslint/no-require-imports': 'error',
+  '@typescript-eslint/no-require-imports': 'off',
   'no-shadow': 'off',
   '@typescript-eslint/no-shadow': 'off',
   '@typescript-eslint/no-this-alias': [

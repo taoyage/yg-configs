@@ -1,6 +1,6 @@
 {
-  "name": "@yg/configs",
-  "version": "1.0.0",
+  "name": "@taoyage/configs",
+  "version": "1.0.1",
   "description": "CLI toolbox for common scripts for my projects",
   "scripts": {
     "prepare": "husky install",

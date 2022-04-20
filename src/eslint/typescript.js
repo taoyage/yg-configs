@@ -20,13 +20,22 @@ module.exports = {
     requireConfigFile: false,
     sourceType: 'module',
     allowImportExportEverywhere: true,
-    project: './tsconfig.json',
-    ecmaFeatures: {
-      globalReturn: false,
-      impliedStrict: true,
-      jsx: true,
-    },
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'module',
+        ecmaFeatures: {
+          globalReturn: false,
+          impliedStrict: true,
+          jsx: true,
+        },
+        project: './tsconfig.json',
+      },
+    },
+  ],
   settings: {
     react: {
       version: 'detect',
