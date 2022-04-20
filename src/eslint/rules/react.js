@@ -125,7 +125,7 @@ module.exports = {
   'react/style-prop-object': 'error',
   // Prevent passing of children to void DOM elements (e.g. <br />).
   'react/void-dom-elements-no-children': 'error',
-  'react/function-component-definition': 'error',
+  'react/function-component-definition': 'off',
 
   // ====== jsx =======
 
