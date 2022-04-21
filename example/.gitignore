@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+package-lock.json
+yarn.lock
+
+# Lint
+.eslintcache
+.stylelintcache
+
+# Public
+public
+
+# IDE
+.idea
+.vscode
+
+# File System
+*.DS_Store
+
+.cache
+.translate
+
+dist

@@ -1,0 +1,12 @@
+{
+  "extends": "@taoyage/configs/shared-tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "rootDir": "src"
+  },
+  "exclude": ["node_modules", "test", "dist"],
+  "include": ["src/**/*"]
+}
