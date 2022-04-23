@@ -1,6 +1,6 @@
 {
   "name": "@taoyage/configs",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "CLI toolbox for common scripts for my projects",
   "scripts": {
     "prepare": "husky install",
@@ -25,7 +25,8 @@
     "prettier.js",
     "postcss.js",
     "shared-tsconfig.json",
-    "stylelint.js"
+    "stylelint.js",
+    "swc-ts.js"
   ],
   "engines": {
     "node": ">= 14.10"

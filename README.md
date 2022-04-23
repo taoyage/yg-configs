@@ -1,6 +1,6 @@
 # yg-configs 🛠📦
 
-![license](https://img.shields.io/github/license/taoyage/yg-configs)
+![license](https://img.shields.io/github/license/taoyage/yg-configs) ![npm](https://img.shields.io/badge/npm-v18.0.0-blue)![download](https://img.shields.io/npm/dt/@taoyage/configs)
 
 CLI toolbox for common scripts for my front-end projects
 
@@ -18,6 +18,7 @@ CLI toolbox for common scripts for my front-end projects
     -   [config lintstaged](#config-lintstaged)
     -   [config stylelint](#config-stylelint)
     -   [config postcss](#config-postcss)
+    -   [config swc](#config-swc)
 -   [example](https://github.com/taoyage/yg-configs/tree/master/example)
 
 ## Installation
@@ -91,6 +92,34 @@ if were to do this for postcss, you could create an postcss.config.js with the c
 module.exports = require('@sk/configs/postcss');
 ```
 
+### config swc
+
+if were to do swc-loader to webpack configure，you could import this swc configuration，
+this configuration suport typescript program. example of
+
+```javascript
+  import swcOptions from '@taoyage/configs/swc-ts';
+
+  module: {
+    rules: [
+      {
+        test: /\.ts?x$/,
+        use: {
+          loader: 'swc-loader',
+          options: swcOptions(rootPath, { isDev: false, override: {} }),
+        },
+      },
+    ],
+  },
+
+```
+
+| params   | description                  | type   |
+| -------- | ---------------------------- | ------ |
+| rootPath | tsconfig.json file path      | string |
+| isDev    | current is dev or production | bool   |
+| override | swc compilation config       | object |
+
 ### TODO
 
 -   [x] eslint config
@@ -99,5 +128,6 @@ module.exports = require('@sk/configs/postcss');
 -   [x] commitlint config
 -   [x] lintstage config
 -   [x] stylelint config
--   [ ] swc config
+-   [x] swc config
+-   [ ] swc react-loader
 -   [ ] babel config

@@ -1,0 +1,22 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true,
+      "dynamicImport": true,
+      "exportDefaultFrom": true
+    },
+    // "transform": {
+    //   "react": {
+    //     "pragma": "React.createElement",
+    //     "pragmaFrag": "React.Fragment",
+    //     "throwIfNamespace": true,
+    //     "development": false,
+    //     "useBuiltins": false
+    //   }
+    // }
+    "target": "es2016"
+  },
+  "minify": true
+}

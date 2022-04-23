@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const swcOptions = require('@taoyage/configs/swc-ts');
+
+const rootPath = path.resolve(__dirname, './');
 
 module.exports = {
   mode: 'development',
@@ -15,7 +18,8 @@ module.exports = {
       {
         test: /\.ts?x$/,
         use: {
-          loader: 'babel-loader',
+          loader: 'swc-loader',
+          options: swcOptions(rootPath, { isDev: false, override: {} }),
         },
       },
     ],
