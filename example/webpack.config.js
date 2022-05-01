@@ -6,7 +6,7 @@ const swcOptions = require('@taoyage/configs/swc-ts');
 const rootPath = path.resolve(__dirname, './');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.tsx',
   devtool: 'inline-source-map',
   output: {
@@ -18,8 +18,9 @@ module.exports = {
       {
         test: /\.ts?x$/,
         use: {
-          loader: 'swc-loader',
-          options: swcOptions(rootPath, { isDev: false, override: {} }),
+          // loader: 'swc-loader',
+          // options: swcOptions(rootPath, { isDev: false, override: {} }),
+          loader: 'babel-loader',
         },
       },
     ],

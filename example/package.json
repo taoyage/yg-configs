@@ -18,7 +18,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@taoyage/configs": "^1.0.4",
+    "@taoyage/configs": "^1.0.7",
     "@types/lodash": "^4.14.182",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
