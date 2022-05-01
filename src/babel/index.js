@@ -23,7 +23,7 @@ module.exports = function (api, opts = {}) {
   const runtimePath = path.dirname(require.resolve('@babel/runtime/package.json'));
   const runtimeVersion = require('@babel/runtime/package.json').version;
 
-  const { useBuiltIns = 'usage', pol } = options;
+  const { useBuiltIns = 'usage' } = opts;
 
   if (!isEnvDevelopment && !isEnvProduction && !isEnvTest) {
     throw new Error(
@@ -51,6 +51,7 @@ module.exports = function (api, opts = {}) {
           corejs: 3,
           exclude: ['transform-typeof-symbol'],
           bugfixes: true,
+          targets: browsersList,
         },
       ],
       [
