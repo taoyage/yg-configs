@@ -19,6 +19,7 @@ CLI toolbox for common scripts for my front-end projects
     -   [config stylelint](#config-stylelint)
     -   [config postcss](#config-postcss)
     -   [config swc](#config-swc)
+    -   [config babel](#config-babel)
 -   [example](https://github.com/taoyage/yg-configs/tree/master/example)
 
 ## Installation
@@ -114,6 +115,16 @@ this configuration suport typescript program. example of
 
 ```
 
+### config babel
+
+if were todo babel-loader to webpack configure to react, you could create an .babelrc.js with content of
+
+```javascript
+module.exports = {
+    presets: [['@taoyage/configs/babel']],
+};
+```
+
 | params   | description                  | type   |
 | -------- | ---------------------------- | ------ |
 | rootPath | tsconfig.json file path      | string |
@@ -130,4 +141,5 @@ this configuration suport typescript program. example of
 -   [x] stylelint config
 -   [x] swc config
 -   [ ] swc react-loader
--   [ ] babel config
+-   [x] babel config
+-   [x] browserslist
