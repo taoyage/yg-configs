@@ -1,6 +1,6 @@
 {
   "name": "@taoyage/configs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "CLI toolbox for common scripts for my projects",
   "scripts": {
     "prepare": "husky install",
