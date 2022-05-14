@@ -115,6 +115,12 @@ this configuration suport typescript program. example of
 
 ```
 
+| params   | description                  | type   |
+| -------- | ---------------------------- | ------ |
+| rootPath | tsconfig.json file path      | string |
+| isDev    | current is dev or production | bool   |
+| override | swc compilation config       | object |
+
 ### config babel
 
 if were todo babel-loader to webpack configure to react, you could create an .babelrc.js with content of
@@ -125,12 +131,6 @@ module.exports = {
 };
 ```
 
-| params   | description                  | type   |
-| -------- | ---------------------------- | ------ |
-| rootPath | tsconfig.json file path      | string |
-| isDev    | current is dev or production | bool   |
-| override | swc compilation config       | object |
-
 ### TODO
 
 -   [x] eslint config
@@ -140,6 +140,5 @@ module.exports = {
 -   [x] lintstage config
 -   [x] stylelint config
 -   [x] swc config
--   [ ] swc react-loader
 -   [x] babel config
 -   [x] browserslist
