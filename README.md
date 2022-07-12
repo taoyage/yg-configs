@@ -1,6 +1,6 @@
 # yg-configs 🛠📦
 
-![license](https://img.shields.io/github/license/taoyage/yg-configs) ![npm](https://img.shields.io/badge/npm-v18.0.0-blue)![download](https://img.shields.io/npm/dt/@taoyage/configs)
+![license](https://img.shields.io/github/license/taoyage/yg-configs) ![npm](https://img.shields.io/badge/npm-v18.0.0-blue)!
 
 CLI toolbox for common scripts for my front-end projects
 
